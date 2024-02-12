@@ -84,7 +84,7 @@ const Home = () => {
 
       const a = document.createElement("a")
       a.href = url
-      a.download = `qrcode-${new Date().toISOString()}.${format}`
+      a.download = `qrcode-${text}.${format}`
       a.click()
 
       a.append()
