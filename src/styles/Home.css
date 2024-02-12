@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-.home{
+.home {
     width: 100%;
-    height: 90vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.home .container-qr{
+.home .container-qr {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,14 +19,36 @@
     background-color: rgba(237, 237, 237, 0.6);
     padding: 2rem;
     border-radius: 10px;
+    margin: 2rem;
 }
 
-.home .container-qr h1{
+.home .container-qr .image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.home .container-qr .image .icon{
+    color: #4f4f4f;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.home .container-qr .image .icon:hover{
+    background-color: rgb(234, 234, 234);
+    border-radius: 5px;
+}
+
+.home .container-qr h1 {
     color: #007BFF;
     font-weight: 500;
 }
 
-.home .container-qr form{
+.home .container-qr form {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,7 +58,7 @@
     margin-top: 2rem;
 }
 
-.home .container-qr form input{
+.home .container-qr form input {
     padding: 15px 10px;
     border-radius: 6px;
     border: 0;
@@ -45,12 +67,12 @@
     transition: 0.2s ease;
 }
 
-.home .container-qr form input:focus{
+.home .container-qr form input:focus {
     outline: none;
     border-color: #007BFF;
 }
 
-.home .container-qr form button{
+.home .container-qr form button {
     width: 30%;
     padding: 17px 10px;
     border-radius: 6px;
@@ -62,19 +84,37 @@
     transition: 0.2s ease;
 }
 
-.home .container-qr form button:hover{
+.home .container-qr form button:hover {
     background-color: #3a7cc3;
 }
 
-.home .container-qr .qr-image{
+.home .container-qr .qr-image {
     margin-top: 3rem;
 }
 
-.home .container-qr .grid-wrapper{
+.home .container-qr .grid-wrapper {
     margin-top: 3rem;
 }
 
-.home .container-qr .download-button{
+.basic-single {
+    width: 90%;
+}
+
+.home .container-qr .container-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.home .container-qr .container-download label{
+    padding: 6px 0;
+    font-size: 0.8rem;
+}
+
+.home .container-qr .download-button {
     width: 90%;
     padding: 14px 10px;
     border-radius: 6px;
@@ -87,6 +127,6 @@
     margin-top: 1.5rem;
 }
 
-.home .container-qr .download-button:hover{
+.home .container-qr .download-button:hover {
     background-color: #3a7cc3;
 }
